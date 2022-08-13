@@ -113,16 +113,44 @@ transform: translateY(-30%);
 color: transparent;
 transform: translateY(-160%);
 }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
+  padding: 1rem;
+  text-align: center;
+  /* background-color: #f1f1f1; */
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+.row {margin: 0 -10px;}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+* {
+  box-sizing: border-box;
+}
+@media screen and (max-width: 300px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p{
+  font-size: 1.2rem;
+  background: -webkit-linear-gradient(100deg,#D35400 30%, #F7DC6F 85%, #EC7063 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
 }
